@@ -58,7 +58,7 @@ def replace_colors(pixel, replacements):
 
 def out(pixel):
     replacements = {
-        "SELECTION_BG": ("#5294e2", "#f0544c"),
+        "SELECTION_BG": ("#5294e2", "#4D69E2"),
     }
     new_pixel = replace_colors(pixel, replacements)
     if new_pixel:
@@ -66,4 +66,4 @@ def out(pixel):
     else:
         # darker:
         r, g, b, a = pixel
-        return (r - 31, g - 30, b - 35, a)
+        return (r - 38, g - 41, b - 51, a)
