@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=X-GNOME-Metatheme
+Name=Planaro
+Comment=A modern GTK+ theme for Linux operating systems
+Encoding=UTF-8
+
+[X-GNOME-Metatheme]
+GtkTheme=Planaro
+IconTheme=Adwaita
+ButtonLayout=menu:minimize,maximize,close

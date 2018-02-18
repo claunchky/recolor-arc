@@ -1,0 +1,93 @@
+// When color definition differs for dark and light variant,
+// it gets @if ed depending on $variant
+
+$base_color: #404552;
+$text_color: #d3dae3;
+$bg_color: #383c4a;
+$fg_color: #d3dae3;
+
+$selected_fg_color: #ffffff;
+$selected_bg_color: #5294e2;
+$selected_borders_color: darken($selected_bg_color, 20%);
+$borders_color: darken($bg_color,6%);
+
+$link_color: lighten($selected_bg_color,20%);
+$link_visited_color: lighten($selected_bg_color,10%);
+
+$selection_mode_bg: $selected_bg_color;
+$selection_mode_fg: $selected_fg_color;
+$warning_color: #f27835;
+$error_color: #fc4138;
+$warning_fg_color: white;
+$error_fg_color: white;
+$success_color: #73d22f;
+$destructive_color: #f04a50;
+$suggested_color: #4dadd4;
+$destructive_fg_color: white;
+$suggested_fg_color: white;
+
+$drop_target_color: #f08437;
+
+//insensitive state derived colors
+$insensitive_fg_color: transparentize($fg_color, 0.55);
+$insensitive_bg_color: lighten($bg_color, 2%);
+
+$header_bg: #2f343f;
+
+$header_bg_backdrop: lighten($header_bg, 1.5%);
+
+$header_border: darken($header_bg, 4%);
+
+$header_fg: saturate(transparentize($fg_color, 0.2), 10%);
+
+$dark_sidebar_bg: #353945;
+$dark_sidebar_fg: #bac3cf;
+$dark_sidebar_border: darken($dark_sidebar_bg, 5%);
+
+$osd_fg_color: $dark_sidebar_fg;
+$osd_bg_color: $dark_sidebar_bg;
+
+$osd_button_bg: transparentize(lighten($osd_bg_color, 22%), 0.6);
+$osd_button_border: transparentize(darken($osd_bg_color, 12%), 0.6);
+
+$osd_entry_bg: transparentize(lighten($osd_bg_color, 22%), 0.6);
+$osd_entry_border: transparentize(darken($osd_bg_color, 12%), 0.6);
+
+$osd_insensitive_bg_color: darken($osd_bg_color, 3%);
+$osd_insensitive_fg_color: mix($osd_fg_color, opacify($osd_bg_color, 1), 30%);
+$osd_borders_color: transparentize(black, 0.3);
+
+$panel_bg: darken($dark_sidebar_bg, 4.7%);
+$panel_fg: $dark_sidebar_fg;
+
+$entry_bg: lighten($base_color, 0%);
+$entry_border: darken($borders_color, 0%);
+
+$header_entry_bg: transparentize(lighten($header_bg, 22%), 0.6);
+$header_entry_border: transparentize(darken($header_bg, 12%), 0.6);
+
+$button_bg:lighten($base_color, 2%);
+$button_border: $entry_border;
+
+$header_button_bg: transparentize(lighten($header_bg, 22%), 0.6);
+$header_button_border: transparentize(darken($header_bg, 12%), 0.6);
+
+//WM Buttons
+
+// Close
+$wm_button_close_bg: #cc575d;
+$wm_button_close_hover_bg: #d7787d;
+$wm_button_close_active_bg: #be3841;
+
+$wm_icon_close_bg: #2f343f;
+
+// Minimize, Maximize
+$wm_button_hover_bg: #454c5c;
+$wm_button_active_bg: $selected_bg_color;
+
+$wm_button_hover_border: #292932;
+
+$wm_icon_bg: #90939b;
+$wm_icon_unfocused_bg: #666a74;
+$wm_icon_hover_bg: #c4c7cc;
+$wm_icon_active_bg: $selected_fg_color;
